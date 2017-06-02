@@ -1,0 +1,25 @@
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+  </style>
+  </head>
+  <table>
+
+    <tr>
+    <th>Name</th>
+  </tr>
+
+    <tr>
+
+    <td><% @figures.each do |figure| %>
+      <a href="/figures/<%= figure.id %>"> <%= figure.name %> </a><br>
+    <% end %> </td>
+
+    </tr>
+  </table>
+      <br>
+      <br>
+      <a class="button" href="/figures/new">Create a new Figure</a><br>
+      <a class="button" href="/figures">View All Figures</a>

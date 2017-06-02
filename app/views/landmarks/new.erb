@@ -1,0 +1,10 @@
+<h1>Create a new landmark:</h1>
+
+<form action="/landmarks" method="POST">
+  <p><h2><label>Name:</label></h2>
+  <input type="text" name="landmark[name]" id="landmark_name" value="@landmark.name"></p>
+
+  <p><h2><label>Year Completed:<label></h2>
+  <p><input type="text" name="landmark[year_completed]" id="landmark_year_completed"></p>
+  <input type="submit" value="Create New Landmark">
+</form>

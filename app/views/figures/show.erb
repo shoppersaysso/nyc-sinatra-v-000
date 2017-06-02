@@ -1,0 +1,28 @@
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Landmarks</th>
+    <th>Titles</th>
+
+    </tr>
+  <tr>
+    <td><a href="/figures/<%= @figure.id %>/edit"> <%= @figure.name %></td>
+
+    <td>  <% @figure.landmarks.each do |landmark| %>
+      <%= landmark.name %>
+      <% end %></td>
+
+    <td>  <% @figure.titles.each do |title| %>
+      <%= title.name %>
+      <% end %></td>
+
+  </tr>
+
+<table>
